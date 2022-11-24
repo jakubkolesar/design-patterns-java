@@ -3,7 +3,7 @@ package sk.kolesarj.patterns;
 import java.util.Arrays;
 import java.util.List;
 
-/*
+/**
  * OPEN CLOSED PRINCIPLE
  * Code open for extension,
  * closed for modification
