@@ -1,4 +1,4 @@
-package sk.kolesarj.patterns;
+package sk.kolesarj.learning.principles;
 /**
  * Liskovej substitucny princip:
  * ak mame base class ako napr Rectangle,

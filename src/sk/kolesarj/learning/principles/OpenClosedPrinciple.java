@@ -1,6 +1,5 @@
-package sk.kolesarj.patterns;
+package sk.kolesarj.learning.principles;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**

@@ -1,4 +1,4 @@
-package sk.kolesarj.patterns;
+package sk.kolesarj.learning.principles;
 /*
 * How to split interfaces into a smaller interfaces.
 * Do Interface-u by sme nemali davat viac veci, ako
