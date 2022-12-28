@@ -7,16 +7,20 @@ class PersonF{
     public String streetAddress,postcode,city;
     // employment
     public String companyName, position;
+
+    //relationship
+    public String status;
     public int annualIncome;
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "PersonF{" +
                 "streetAddress='" + streetAddress + '\'' +
                 ", postcode='" + postcode + '\'' +
                 ", city='" + city + '\'' +
                 ", companyName='" + companyName + '\'' +
                 ", position='" + position + '\'' +
+                ", status='" + status + '\'' +
                 ", annualIncome=" + annualIncome +
                 '}';
     }
@@ -35,6 +39,8 @@ class PersonBuilderF {
     public PersonJobBuilder works(){
         return new PersonJobBuilder(this.person);
     }
+
+    public RelationshipBuilder relationship(){ return new RelationshipBuilder(this.person); }
 }
 
 class PersonAddressBuilder extends PersonBuilderF {
@@ -75,6 +81,17 @@ class PersonJobBuilder extends PersonBuilderF {
     }
 }
 
+class RelationshipBuilder extends PersonBuilderF {
+    public RelationshipBuilder(PersonF person) {
+        this.person = person;
+    }
+
+    public RelationshipBuilder withStatus(String status){
+        this.person.status = status;
+        return this;
+    }
+}
+
 public class FacetedBuilder {
     public static void main(String[] args) {
         PersonBuilderF pb = new PersonBuilderF();
@@ -87,6 +104,8 @@ public class FacetedBuilder {
                     .at("QORPO")
                     .withPosition("developer")
                     .withIncome(120123)
+                .relationship()
+                    .withStatus("divorced")
                 .build();
         System.out.println(person);
     }
