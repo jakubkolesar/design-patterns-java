@@ -17,7 +17,8 @@ class Point {
 
     /*FACTORY*/
     /*
-    * static preto, pretoze nemozme vytvarat instancie tejto factory*/
+    * static preto, pretoze mozme volat tuto triedu
+    * bez instancie*/
     public static class Factory {
         /*FACTORY METHODS*/
         public static Point newCartesianPoint(double x, double y) {

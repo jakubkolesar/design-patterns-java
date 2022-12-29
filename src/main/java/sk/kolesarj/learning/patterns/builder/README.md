@@ -1,3 +1,4 @@
+# Builder
 Predstavme si, že máme triedu s 10 parametrovým
 konštruktorom. Nie je to dobrý practise a preto
 použijeme [builder pattern](https://refactoring.guru/design-patterns/builder).

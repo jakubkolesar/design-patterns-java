@@ -1,3 +1,4 @@
+# Singleton
 Pre niektoré komponenty dáva zmysel, aby ich inštancia bola v kóde
 iba raz (database repository). 
 * každému posúvame rovnakú inštanciu objektu

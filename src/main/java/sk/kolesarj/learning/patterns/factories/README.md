@@ -1,3 +1,4 @@
+# Factory
 Factory pattern narozdiel od Buildera vytvorí celý objekt naraz.
 Poskytuje interface pre vytváranie objektov.
 
