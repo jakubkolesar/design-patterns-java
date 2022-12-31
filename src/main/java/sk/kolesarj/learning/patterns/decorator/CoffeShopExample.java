@@ -54,5 +54,9 @@ public class CoffeShopExample {
         Beverage caramelCreamCoffee = new CreamAddon(new CaramelAddon(new Coffee()));
         System.out.println(caramelCreamCoffee.cost());
 
+        Beverage doubleCaramel = new CaramelAddon(new CaramelAddon(new Coffee()));
+        System.out.println(doubleCaramel.cost());
+
+
     }
 }
